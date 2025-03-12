@@ -1,0 +1,21 @@
+.cart-widget {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Tamaño del ícono */
+  }
+  
+  .cart-widget i {
+    margin-right: 8px; /* Espacio entre el ícono y el número */
+  }
+  
+  .cart-count {
+    background-color: #ff4c4c; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 3px 8px; /* Espaciado alrededor del número */
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px; /* Espacio entre el ícono y el número */
+    display: inline-block;
+  }
+  

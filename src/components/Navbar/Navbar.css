@@ -6,14 +6,41 @@
     height: 5rem;
     width: 100%;
     background-color: #afeaaf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Asegura que la barra de navegación quede encima de otros elementos */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
 }
-
+/* Estilo para la imagen del logo */
+.nav-bar-logo {
+    height: 50px; /* Altura del logo */
+    width: auto;  /* Mantener la proporción de la imagen */
+    transition: transform 0.3s ease; /* Efecto de transición al pasar el ratón */
+  }
+  
+  /* Efecto al pasar el ratón sobre el logo */
+  .nav-bar-logo:hover {
+    transform: scale(1.5); /* Aumentar ligeramente el tamaño al pasar el ratón */
+  }
+  
 .nav-bar-items{
     display: flex;
     width: 100%;
+    margin: 0 1rem; /* Espaciado entre los enlaces */
     justify-content: space-around;
     align-items: center;
     list-style: none;
     margin: 0;
+    transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición al pasar el ratón */
 
 }
+.nav-bar-items :hover {
+    color: #0f7737; /* Color amarillo cuando pasamos el ratón sobre los enlaces */
+    transform: translateY(-3px); /* Efecto de elevación al pasar el ratón */
+  }
+  
+  /* Agregar un color de fondo diferente al pasar el ratón sobre la barra */
+  .nav-bar:hover {
+    background-color: #5fac5f; /* Color más oscuro cuando pasamos el ratón sobre la barra */
+  }

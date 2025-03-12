@@ -1,16 +1,17 @@
 import './Navbar.css';
+import CartWidget from '../CartWidget/Cartwidget';
 
 function Navbar() {
     return (
         <header>
             <nav className='nav-bar'>
-                <p>logo</p>
+                <img src="../../assets/Logo.png" alt="Logo" className="nav-bar-logo" /> 
                 <ul className='nav-bar-items'>
                     <li>Inicio</li>
                     <li>Productos</li>
                     <li>Contacto</li>
                 </ul>
-                <p>carrito (3)</p>
+                <CartWidget /> {/* Renderizamos el widget del carrito */}
 
             </nav>
         </header>
