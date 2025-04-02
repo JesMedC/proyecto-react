@@ -1,0 +1,54 @@
+/* Estilos para los productos */
+.item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.item p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.item .price {
+  color: #0bc6dc; /* Color azul claro para el precio */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item button {
+  background-color: #0bc6dc; /* Azul claro */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+  background-color: #09a4c3; /* Un tono más oscuro de azul claro */
+}

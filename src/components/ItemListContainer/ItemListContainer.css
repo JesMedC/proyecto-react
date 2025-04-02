@@ -1,0 +1,135 @@
+/* Contenedor general de los productos */
+.item-list-container {
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la lista de productos */
+.item-list-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de los productos */
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Estilo para cada producto en la lista */
+.item {
+  background-color: #fff;
+  display: flex;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 600px; /* Ancho fijo para los productos */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.item img {
+  width: 150px; /* Tamaño de la imagen */
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px; /* Espacio entre la imagen y los detalles */
+}
+
+/* Contenedor de los detalles del producto */
+.item .details {
+  flex-grow: 1;
+}
+
+/* Nombre del producto */
+.item .name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Precio del producto */
+.item .price {
+  font-size: 20px;
+  color: #0bc6dc;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Contenedor de la cantidad a agregar */
+.item .quantity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+/* Input para la cantidad */
+.item .quantity input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* Botón de cantidad */
+.item .quantity button {
+  padding: 5px 10px;
+  background-color: #0bc6dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item .quantity button:hover {
+  background-color: #09a4c3;
+}
+
+/* Botón de agregar al carrito */
+.item button {
+  background-color: #0bc6dc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+  background-color: #0a89a2;
+}
+
+/* Botón de ver detalle */
+.item a button {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.item a button:hover {
+  background-color: #ddd;
+}

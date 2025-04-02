@@ -1,0 +1,136 @@
+/* Contenedor general de los detalles del producto */
+.item-detail-container {
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la página de detalle */
+.item-detail-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de los detalles del producto */
+.product-detail {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Imagen del producto */
+.product-detail img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Contenedor de los detalles textuales del producto */
+.details {
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+/* Nombre del producto */
+.details .name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Precio del producto */
+.details .price {
+  font-size: 22px;
+  color: #0bc6dc;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Descripción del producto */
+.details .description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Más detalles */
+.details .brand,
+.details .color,
+.details .weight,
+.details .stock {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Botón para agregar al carrito */
+.details button {
+  background-color: #0bc6dc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details button:hover {
+  background-color: #0a89a2;
+}
+
+/* Contenedor para la cantidad a agregar */
+.details .quantity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+/* Input para la cantidad */
+.details .quantity input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* Botón de cantidad */
+.details .quantity button {
+  padding: 5px 10px;
+  background-color: #0bc6dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details .quantity button:hover {
+  background-color: #09a4c3;
+}
+
+/* Botón de volver a la tienda */
+.details a button {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.details a button:hover {
+  background-color: #ddd;
+}

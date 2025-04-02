@@ -1,21 +1,54 @@
+import React, { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../CartContext/CartContext'; // Importamos el contexto
+import CartWidget from '../CartWidget/CartWidget';
 import './Navbar.css';
-import CartWidget from '../CartWidget/Cartwidget';
 
 function Navbar() {
-    return (
-        <header>
-            <nav className='nav-bar'>
-                <img src="../../assets/Logo.png" alt="Logo" className="nav-bar-logo" /> 
-                <ul className='nav-bar-items'>
-                    <li>Inicio</li>
-                    <li>Productos</li>
-                    <li>Contacto</li>
-                </ul>
-                <CartWidget /> {/* Renderizamos el widget del carrito */}
+  const [showCart, setShowCart] = useState(false);
 
-            </nav>
-        </header>
-    );
-};
+  const { cart } = useContext(CartContext); // Accedemos al contexto del carrito
+
+  // Calcular el total de productos sumando las cantidades de los productos
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+  const toggleCart = () => {
+    setShowCart(!showCart);
+  };
+
+  return (
+    <header>
+      <nav className="nav-bar">
+        <Link to="/">
+          <img src="../../assets/logo.png" alt="Logo" className="nav-bar-logo" />
+        </Link>
+
+        <ul className="nav-bar-items">
+          <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="/product">Productos</Link>
+          </li>
+          <li>
+            <Link to="/contacto">Contacto</Link>
+          </li>
+        </ul>
+
+        <div className="cart-widget-container">
+          <Link to="/carrito">
+            <CartWidget />
+
+          </Link>
+        </div>
+      </nav>
+
+      {/* Condicional para mostrar el carrito */}
+      <div className={`cart-modal ${showCart ? 'show' : ''}`}>
+        {/* Aquí iría el componente CartView si es necesario */}
+      </div>
+    </header>
+  );
+}
 
 export default Navbar;

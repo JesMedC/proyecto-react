@@ -1,0 +1,25 @@
+/* Estilo general de la aplicación */
+body {
+    font-family: 'Roboto', sans-serif;  /* Fuente similar a la de Mercado Libre */
+    background-color: #f8f8f8; /* Fondo claro para la página */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3, h4 {
+    margin: 0;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  

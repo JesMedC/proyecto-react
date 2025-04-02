@@ -1,0 +1,69 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Fondo claro para contraste */
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .home-header {
+    font-size: 6rem; /* Aumentamos el tamaño del texto */
+    color: #0bc6dc;
+    font-weight: bold;
+    margin-bottom: 30px; /* Aumentamos el espacio debajo del título */
+    text-align: center;
+    letter-spacing: 2px; /* Aumentamos el espacio entre las letras */
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.1); /* Mayor sombra */
+  }
+  
+  .home-description {
+    font-size: 2.5rem; /* Aumentamos el tamaño del texto */
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px; /* Mayor espacio debajo de la descripción */
+    max-width: 1000px; /* Aumentamos el ancho máximo */
+  }
+  
+  .home-image {
+    max-width: 100%; /* Maximizamos el ancho de la imagen */
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Más sombra para destacar la imagen */
+    overflow: hidden;
+  }
+  
+  .home-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  /* Efecto hover para la imagen */
+  .home-image:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .home-button {
+    background-color: #0bc6dc;
+    color: white;
+    border: none;
+    padding: 20px 50px; /* Hacemos el botón más grande */
+    border-radius: 50px;
+    font-size: 2rem; /* Aumentamos el tamaño del texto */
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .home-button:hover {
+    background-color: #09a1b3;
+  }
+  

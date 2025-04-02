@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,7 +12,8 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

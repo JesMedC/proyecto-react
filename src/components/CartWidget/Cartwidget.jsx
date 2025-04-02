@@ -1,15 +1,28 @@
-import './CartWidget.css'
-
+import React, { useContext } from 'react';
+import { CartContext } from '../CartContext/CartContext';
+import './CartWidget.css';
 
 const CartWidget = () => {
-    const itemsInCart = 5; // Número de artículos en el carrito, puedes cambiarlo dinámicamente
-  
+  const { cart } = useContext(CartContext);
+
+  // Calcular la cantidad total de productos sumando las cantidades de cada uno
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+  // Si no hay productos en el carrito, no renderizamos el número
+  if (totalItems === 0) {
     return (
       <div className="cart-widget">
-        <i className="fas fa-shopping-cart"></i> {/* Aquí usamos el ícono de Font Awesome */}
-        {itemsInCart > 0 && <span>{itemsInCart}</span>} {/* Muestra el número de artículos si es mayor a 0 */}
+        <i className="fas fa-shopping-cart"></i>
       </div>
     );
-  };
-  
-  export default CartWidget;
+  }
+
+  return (
+    <div className="cart-widget">
+      <i className="fas fa-shopping-cart"></i>
+      <span>{totalItems}</span> {/* Mostrar la cantidad total de productos en el carrito */}
+    </div>
+  );
+};
+
+export default CartWidget;

@@ -1,46 +1,52 @@
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    height: 5rem;
-    width: 100%;
-    background-color: #afeaaf;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
-    top: 0;
-    left: 0;
-    z-index: 10; /* Asegura que la barra de navegación quede encima de otros elementos */
-    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0bc6dc; /* Color de fondo azul claro */
+  padding: 15px 30px;
 }
-/* Estilo para la imagen del logo */
-.nav-bar-logo {
-    height: 50px; /* Altura del logo */
-    width: auto;  /* Mantener la proporción de la imagen */
-    transition: transform 0.3s ease; /* Efecto de transición al pasar el ratón */
-  }
-  
-  /* Efecto al pasar el ratón sobre el logo */
-  .nav-bar-logo:hover {
-    transform: scale(1.5); /* Aumentar ligeramente el tamaño al pasar el ratón */
-  }
-  
-.nav-bar-items{
-    display: flex;
-    width: 100%;
-    margin: 0 1rem; /* Espaciado entre los enlaces */
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición al pasar el ratón */
 
+.nav-bar-logo {
+  height: 40px; /* Ajusta el tamaño del logo */
 }
-.nav-bar-items :hover {
-    color: #0f7737; /* Color amarillo cuando pasamos el ratón sobre los enlaces */
-    transform: translateY(-3px); /* Efecto de elevación al pasar el ratón */
-  }
-  
-  /* Agregar un color de fondo diferente al pasar el ratón sobre la barra */
-  .nav-bar:hover {
-    background-color: #5fac5f; /* Color más oscuro cuando pasamos el ratón sobre la barra */
-  }
+
+.nav-bar-items {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar-items li {
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* Color de texto blanco */
+  cursor: pointer;
+}
+
+.nav-bar-items li:hover {
+  color: #f1f1f1; /* Efecto hover en los elementos del menú */
+  transition: color 0.3s;
+}
+
+.cart-widget-container {
+  position: relative;
+}
+
+.cart-widget {
+  display: flex;
+  align-items: center;
+  color: rgb(29, 26, 230);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.cart-widget span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 14px;
+}
